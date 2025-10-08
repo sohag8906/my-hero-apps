@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "title": "Forest: Focus for Productivity",
+    "companyName": "SoftMind Inc.",
+    "image": "https://i.ibb.co/Q8JcZwh/app1.png",
+    "description": "Grow virtual trees while staying focused and avoiding distractions.",
+    "size": 42,
+    "reviews": 34000,
+    "ratingAvg": 4.7,
+    "downloads": 5600000
+  },
+  {
+    "id": 2,
+    "title": "SmPlan: ToDo List with Reminder",
+    "companyName": "Healthify Labs",
+    "image": "https://i.ibb.co/0Gy4w2B/app2.png",
+    "description": "Smart task manager that reminds you about your daily goals.",
+    "size": 58,
+    "reviews": 19000,
+    "ratingAvg": 4.5,
+    "downloads": 4300000
+  },
+  {
+    "id": 3,
+    "title": "FLIP - Focus Timer for Study",
+    "companyName": "CrestApps",
+    "image": "https://i.ibb.co/tZsrVWX/app3.png",
+    "description": "Pomodoro-based timer app to boost study focus and productivity.",
+    "size": 39,
+    "reviews": 8700,
+    "ratingAvg": 4.3,
+    "downloads": 2100000
+  },
+  {
+    "id": 4,
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "Pomocat Studio",
+    "image": "https://i.ibb.co/f2JKXzV/app4.png",
+    "description": "Adorable cat-themed timer for better focus and fun productivity.",
+    "size": 95,
+    "reviews": 52000,
+    "ratingAvg": 4.8,
+    "downloads": 8700000
+  },
+  {
+    "id": 5,
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "WanderTech",
+    "image": "https://i.ibb.co/whD0d5r/app5.png",
+    "description": "Plan your day efficiently with advanced scheduling tools.",
+    "size": 80,
+    "reviews": 38000,
+    "ratingAvg": 4.6,
+    "downloads": 6700000
+  },
+  {
+    "id": 6,
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "RoutineSoft",
+    "image": "https://i.ibb.co/f11WDV9/app6.png",
+    "description": "Create healthy habits and track your morning routine easily.",
+    "size": 52,
+    "reviews": 15600,
+    "ratingAvg": 4.2,
+    "downloads": 3200000
+  },
+  {
+    "id": 7,
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "Learnify Systems",
+    "image": "https://i.ibb.co/dmDf9Dk/app7.png",
+    "description": "Grow your digital forest while maintaining focus on work.",
+    "size": 77,
+    "reviews": 50000,
+    "ratingAvg": 4.9,
+    "downloads": 9500000
+  },
+  {
+    "id": 8,
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "Zenith Software",
+    "image": "https://i.ibb.co/QN4RqM1/app8.png",
+    "description": "A creative alarm clock that ensures you wake up on time.",
+    "size": 48,
+    "reviews": 27000,
+    "ratingAvg": 4.4,
+    "downloads": 5100000
+  },
+  {
+    "id": 9,
+    "title": "Study Bunny - Focus Timer",
+    "companyName": "StudyFun Studio",
+    "image": "https://i.ibb.co/mzZfmDG/app9.png",
+    "description": "Earn coins and rewards by staying focused during study sessions.",
+    "size": 61,
+    "reviews": 21000,
+    "ratingAvg": 4.5,
+    "downloads": 3500000
+  },
+  {
+    "id": 10,
+    "title": "Notewise - Smart Notes",
+    "companyName": "NoteTech Labs",
+    "image": "https://i.ibb.co/z8sKVx7/app10.png",
+    "description": "AI-powered note-taking app with voice recognition and tags.",
+    "size": 70,
+    "reviews": 15000,
+    "ratingAvg": 4.6,
+    "downloads": 4700000
+  },
+  {
+    "id": 11,
+    "title": "Calmly - Relax & Meditate",
+    "companyName": "Tranquil Works",
+    "image": "https://i.ibb.co/BPyGbgF/app11.png",
+    "description": "Meditation and sleep sounds to help you relax and unwind.",
+    "size": 85,
+    "reviews": 64000,
+    "ratingAvg": 4.9,
+    "downloads": 10500000
+  },
+  {
+    "id": 12,
+    "title": "Goalify - Habit Tracker",
+    "companyName": "NextStep Studio",
+    "image": "https://i.ibb.co/s2cwPWh/app12.png",
+    "description": "Track your personal goals and stay motivated daily.",
+    "size": 50,
+    "reviews": 30000,
+    "ratingAvg": 4.5,
+    "downloads": 6200000
+  },
+  {
+    "id": 13,
+    "title": "Daylio - Mood Journal",
+    "companyName": "Reflective Labs",
+    "image": "https://i.ibb.co/FzqfnZ3/app13.png",
+    "description": "Keep a mood diary and visualize your emotional progress.",
+    "size": 72,
+    "reviews": 44000,
+    "ratingAvg": 4.8,
+    "downloads": 8200000
+  },
+  {
+    "id": 14,
+    "title": "Todoist - Task Organizer",
+    "companyName": "Doist Ltd.",
+    "image": "https://i.ibb.co/JR6kdtv/app14.png",
+    "description": "Powerful task manager with cross-device synchronization.",
+    "size": 68,
+    "reviews": 38000,
+    "ratingAvg": 4.7,
+    "downloads": 9100000
+  },
+  {
+    "id": 15,
+    "title": "TickTick - ToDo & Calendar",
+    "companyName": "Appest Inc.",
+    "image": "https://i.ibb.co/gwQyTtk/app15.png",
+    "description": "Plan tasks, set reminders, and track goals efficiently.",
+    "size": 76,
+    "reviews": 25000,
+    "ratingAvg": 4.6,
+    "downloads": 7000000
+  },
+  {
+    "id": 16,
+    "title": "Focusmeter - Pomodoro Tracker",
+    "companyName": "Focusify Studio",
+    "image": "https://i.ibb.co/Y84Dp4x/app16.png",
+    "description": "Track your work sessions and improve your concentration.",
+    "size": 55,
+    "reviews": 18000,
+    "ratingAvg": 4.4,
+    "downloads": 4100000
+  },
+  {
+    "id": 17,
+    "title": "MindSpace - Meditation & Focus",
+    "companyName": "MindFlow Labs",
+    "image": "https://i.ibb.co/0DXPQfW/app17.png",
+    "description": "Find peace of mind through guided meditation sessions.",
+    "size": 83,
+    "reviews": 39000,
+    "ratingAvg": 4.8,
+    "downloads": 8800000
+  },
+  {
+    "id": 18,
+    "title": "Minimalist Pomodoro",
+    "companyName": "ZenTech Studio",
+    "image": "https://i.ibb.co/vvQdL0L/app18.png",
+    "description": "Clean and simple Pomodoro timer for distraction-free work.",
+    "size": 40,
+    "reviews": 9000,
+    "ratingAvg": 4.2,
+    "downloads": 2200000
+  },
+  {
+    "id": 19,
+    "title": "WeatherNow - Live Forecast",
+    "companyName": "SkySense Labs",
+    "image": "https://i.ibb.co/NK7c5Tt/app19.png",
+    "description": "Accurate, real-time weather forecast with radar view.",
+    "size": 90,
+    "reviews": 68000,
+    "ratingAvg": 4.9,
+    "downloads": 12000000
+  },
+  {
+    "id": 20,
+    "title": "FocusX - Study Timer",
+    "companyName": "EduFlow Inc.",
+    "image": "https://i.ibb.co/1ZyK4xZ/app20.png",
+    "description": "Smart timer with detailed focus analytics for students.",
+    "size": 63,
+    "reviews": 21000,
+    "ratingAvg": 4.5,
+    "downloads": 5400000
+  }
+]

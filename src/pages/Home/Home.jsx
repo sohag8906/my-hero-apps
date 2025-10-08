@@ -1,10 +1,15 @@
 import React from 'react';
+import AppsData from '../AppsData/AppsData';
+import { useLoaderData } from 'react-router';
 
 
 const Home = () => {
+
+    const apps = useLoaderData();
+    console.log(apps)
     return (
         <div>
-        <h1>home</h1>
+        <AppsData apps={apps}></AppsData>
         </div>
     );
 };
