@@ -2,11 +2,14 @@ import React from 'react';
 import logopng from '../../assets/logo.png'
 
 import { FaGithub } from "react-icons/fa";
+import { Link } from 'react-router';
 const Navbar = () => {
     const links = <>
-        <li className='m-2'> Home</li>
-        <li className='m-2'>Apps</li>
-       <li className='m-2'>Installation</li>
+    <Link to='/'><li className='m-2'> Home</li></Link>
+        <Link to='apps'><li className='m-2'>Apps</li></Link>
+        
+        <Link to='installation'><li className='m-2'>Installation</li></Link>
+       
   </>
     return (
         <div className="navbar bg-base-100 shadow-sm">

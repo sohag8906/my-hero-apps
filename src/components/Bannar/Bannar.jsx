@@ -5,6 +5,7 @@ import logopng from '../../assets/hero.png'
 
 const Bannar = () => {
   return (
+  
     <div >
       <h1 className='text-center font-bold text-5xl mt-10 '>We Build <br />
         <span className='text-[#632EE3]'>Productive</span> Apps</h1>
@@ -72,8 +73,11 @@ const Bannar = () => {
           </div>
         </div>
       </div>
+      
 
     </div>
+    
+   
   );
 };
 
