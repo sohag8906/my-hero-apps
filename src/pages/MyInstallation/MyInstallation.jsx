@@ -3,7 +3,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import lodeimage from "../../assets/icon-downloads.png";
 import staricon from "../../assets/icon-ratings.png";
-import reviewimg from "../../assets/icon-review.png";
+
 
 const MyInstallation = () => {
   const [installedApps, setInstalledApps] = useState([]);

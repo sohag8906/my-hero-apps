@@ -21,18 +21,18 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch("./appsData.json"),
+        loader: () => fetch("/appsData.json"),
         element: <Home />
       },
       {
         path: "appsData",
-        loader: () => fetch("./appsData.json"),
+        loader: () => fetch("/appsData.json"),
         element: <AppsData />
       },
       {
         path: "app/:id",
         loader: async ({ params }) => {
-          const res = await fetch("./appsData.json");
+          const res = await fetch("/appsData.json");
           const data = await res.json();
           return data.find((app) => app.id === parseInt(params.id));
         },
@@ -40,12 +40,12 @@ export const router = createBrowserRouter([
       },
       {
         path: "apps",
-        loader: () => fetch("./appsData.json"),
+        loader: () => fetch("/appsData.json"),
         element: <AllApps />
       },
       {
         path: "installation",
-        loader: () => fetch("./appsData.json"),
+        loader: () => fetch("/appsData.json"),
         element: <MyInstallation />
       },
       {
