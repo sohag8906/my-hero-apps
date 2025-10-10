@@ -3,12 +3,15 @@ import { useLoaderData } from "react-router-dom";
 import ReviewChart from "./ReviewChart";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import lodeimage from "../../assets/icon-downloads.png"
+import staricon from "../../assets/icon-ratings.png"
+import handicon from "../../assets/icon-review.png"
 
 const AppDetails = () => {
   const app = useLoaderData();
   const [installed, setInstalled] = useState(false);
 
-  // Component mount er somoy check korbe app already install ache kina
+  
   useEffect(() => {
     const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
     if (installedApps.some(a => a.id === app.id)) {
@@ -29,7 +32,7 @@ const AppDetails = () => {
 
   if (!app) return <p className="text-center mt-10">App not found!</p>;
 
-  // Dummy ratings (jodi JSON e na thake)
+  
   const ratings = [
     { name: "5★", count: Math.floor(app.reviews * 0.5) },
     { name: "4★", count: Math.floor(app.reviews * 0.3) },
@@ -40,7 +43,7 @@ const AppDetails = () => {
 
   return (
     <div className="max-w-6xl mx-auto p-6">
-      {/* Top Section: Image + Details */}
+     
       <div className="flex flex-col md:flex-row gap-6">
         <div className="md:w-1/2">
           <img
@@ -49,15 +52,33 @@ const AppDetails = () => {
             className="w-full h-[300px] rounded-lg object-cover"
           />
         </div>
-
-        <div className="md:w-1/2 flex flex-col justify-start">
+        
+ <div className="md:w-1/2 flex flex-col justify-start">
           <h1 className="text-3xl font-bold mb-4">{app.title}</h1>
           <p className="text-gray-700 mb-2">{app.description}</p>
-          <p><strong>Company:</strong> {app.companyName}</p>
-          <p><strong>Downloads:</strong> {app.downloads.toLocaleString()}</p>
-          <p><strong>Rating:</strong> {app.ratingAvg}★ ({app.reviews.toLocaleString()} reviews)</p>
+          <div className="flex gap-12">
+        <div className="flex flex-col items-center">
+          
+  <img src={lodeimage} alt="" />
+  <p>Downloads</p>
+  <p className="mt-1 font-semibold">{app.downloads.toLocaleString()}</p>
+</div>
 
-          {/* Install Button */}
+          <div className="flex flex-col items-center">
+  <img src={staricon} alt="" />
+  <p>Average Ratings</p>
+  <p className="mt-1 font-semibold">{app.ratingAvg}</p>
+</div>
+
+
+          <div className="flex flex-col items-center">
+            <img src={handicon} alt="" />
+            <p>Total Reviews</p>
+  
+  <p className="mt-1 font-semibold">{app.reviews.toLocaleString()}</p>
+</div>
+</div>
+          
           <button
             onClick={handleInstall}
             disabled={installed}
@@ -72,13 +93,15 @@ const AppDetails = () => {
         </div>
       </div>
 
-      {/* Ratings Chart */}
+       
+
+      
       <div className="mt-8">
         <h2 className="text-xl font-semibold mb-2">Ratings Breakdown</h2>
         <ReviewChart ratings={ratings} />
       </div>
 
-      {/* Description */}
+      
       <div className="mt-10 p-6 rounded-lg bg-gray-50">
         <h1 className="text-2xl font-bold mb-4">Description</h1>
         <p className="font-normal text-gray-700 leading-relaxed">

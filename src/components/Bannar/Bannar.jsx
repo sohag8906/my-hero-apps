@@ -68,7 +68,7 @@ const Bannar = () => {
             <div className='div-3 text-center'>
               <h4 className='text-white font-normal'>Active Apps</h4>
               <h1 className='text-white font-bold text-4xl mt-4'>132+</h1>
-              <p className='text-white font-normal mt-4'>31 more will Launch</p>
+              
             </div>
           </div>
         </div>

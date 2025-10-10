@@ -27,7 +27,9 @@ const AppsData = ({ apps = [] }) => {
                             <h3 className="font-medium text-center">{app.title}</h3>
                             {/* Downloads and rating */}
                             <div className="flex justify-between w-full mt-2 text-sm text-gray-700">
-                                <span>{app.downloads.toLocaleString()}+ downloads</span>
+                                 <span className="text-gray-700 font-semibold">
+                                  {app.downloads.toLocaleString()} download
+                                  </span>
                                 <span className="text-yellow-500 font-semibold">{app.ratingAvg}★</span>
                             </div>
                         </div>

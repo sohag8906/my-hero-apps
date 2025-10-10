@@ -1,58 +1,58 @@
-import React, { Children, Component } from 'react';
-import { createBrowserRouter, } from "react-router";
-import Root from '../pages/Root/Root';
-import ErrorPage from '../pages/ErrorPage/ErrorPage';
-import Home from '../pages/Home/Home';
-import AppsData from '../pages/AppsData/AppsData';
-import AppDetails from '../pages/AppDetails/AppDetails';
-import AllApps from '../pages/AllApps/AllApps';
-import MyInstallation from '../pages/MyInstallation/MyInstallation';
+import { createBrowserRouter } from "react-router-dom"; 
+import React from "react";
+import Root from "../pages/Root/Root";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Home from "../pages/Home/Home";
+import AppsData from "../pages/AppsData/AppsData";
+import AppDetails from "../pages/AppDetails/AppDetails";
+import AllApps from "../pages/AllApps/AllApps";
+import MyInstallation from "../pages/MyInstallation/MyInstallation";
+import SeachError from "../components/SearchError/SeachError";
 
 
 
- export const router = createBrowserRouter([
+
+
+export const router = createBrowserRouter([
   {
     path: "/",
-    Component:Root,
-    errorElement:<ErrorPage></ErrorPage>,
+    element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
-        loader:() => fetch('./appsData.json'),
-        path: "/",
-        Component:Home
+        loader: () => fetch("./appsData.json"),
+        element: <Home />
       },
       {
-        path:'appsData',
-        loader:() => fetch('./appsData.json'),
-        Component:AppsData
+        path: "appsData",
+        loader: () => fetch("./appsData.json"),
+        element: <AppsData />
       },
       {
-        path: 'app/:id',
-  loader: async ({ params }) => {
-    const res = await fetch('./appsData.json');
-    const data = await res.json();
-    // শুধুমাত্র clicked app return করা
-    return data.find(app => app.id === parseInt(params.id));
-  },
-  Component: AppDetails
-
-      },
-
-      {
-        path:'apps',
-        loader:() => fetch('./appsData.json'),
-        element:<AllApps></AllApps>
-
+        path: "app/:id",
+        loader: async ({ params }) => {
+          const res = await fetch("./appsData.json");
+          const data = await res.json();
+          return data.find((app) => app.id === parseInt(params.id));
+        },
+        element: <AppDetails />
       },
       {
-        path:'installation',
-        loader:() => fetch('./appsData.json'),
-        element: <MyInstallation></MyInstallation>
-
+        path: "apps",
+        loader: () => fetch("./appsData.json"),
+        element: <AllApps />
+      },
+      {
+        path: "installation",
+        loader: () => fetch("./appsData.json"),
+        element: <MyInstallation />
+      },
+      {
+        path:"search-error",
+        element:<SeachError></SeachError>
       }
-     
       
     ]
-  },
+  }
 ]);
